@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_aplikasi_absensi/mahasiswa/ui/absen/absen_page.dart';
 import 'package:flutter_aplikasi_absensi/mahasiswa/ui/home/home_page.dart';
 import 'package:flutter_aplikasi_absensi/mahasiswa/ui/login/login_page.dart';
 import 'package:flutter_aplikasi_absensi/shared/constants.dart';
@@ -13,12 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Aplikasi Presensi',
       theme: ThemeData(
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: kPrimaryColor,
       ),
-      home: HomePage(),
+      home: AbsenPage(),
     );
   }
 }
