@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: kPrimaryColor,
       ),
-      home: AbsenPage(),
+      home: LoginPage(),
     );
   }
 }
